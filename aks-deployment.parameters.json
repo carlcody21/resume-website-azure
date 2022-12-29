@@ -6,7 +6,7 @@
       "value": "website"
     },
     "env": {
-      "value": "dev123"
+      "value": "dev"
     },
     "nodeCount": {
       "value": 1
