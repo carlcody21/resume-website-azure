@@ -1,14 +1,17 @@
-//param location string
-//param clusterName string
-//param nodeCount int
-//param vmSize string 
-//param kubeVersion string
+// ########################
+// ######## Params ########
+// ########################
 
-
+// param object passed from deployment bicep
 param aksSettings object = {
   //kubeVersion: null
 }
 
+// ########################
+// ###### Resources #######
+// ########################
+
+// creates aks cluster with config from aksSettings object
 resource aks 'Microsoft.ContainerService/managedClusters@2022-09-01' = {
   name: '${aksSettings.clusterName}-cluster'
   location: aksSettings.location
