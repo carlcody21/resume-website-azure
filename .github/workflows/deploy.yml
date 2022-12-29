@@ -1,7 +1,7 @@
 on: [push]
 name: AKSDeploy
 env:
-  LOCATION: eastus123
+  LOCATION: eastus
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
