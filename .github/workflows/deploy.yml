@@ -1,7 +1,7 @@
 on: [push]
 name: AKSDeploy
 env:
-  LOCATION: eastus
+  LOCATION: eastus123
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -20,7 +20,7 @@ jobs:
       uses: Azure/cli@v1
       with:
         inlineScript: |
-          a1z deployment sub create -l $LOCATION --template-file $GITHUB_WORKSPACE/aks-deployment.bicep --parameters $GITHUB_WORKSPACE/aks-deployment.parameters.json --what-if
+          az deployment sub create -l $LOCATION --template-file $GITHUB_WORKSPACE/aks-deployment.bicep --parameters $GITHUB_WORKSPACE/aks-deployment.parameters.json --what-if
       
       # AKS deploy
     - name: deploy
