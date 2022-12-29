@@ -20,7 +20,7 @@ jobs:
       uses: Azure/cli@v1
       with:
         inlineScript: |
-          az deployment sub create -l $LOCATION --template-file $GITHUB_WORKSPACE/aks-deployment.bicep --parameters $GITHUB_WORKSPACE/aks-deployment.parameters.json --what-if
+          a1z deployment sub create -l $LOCATION --template-file $GITHUB_WORKSPACE/aks-deployment.bicep --parameters $GITHUB_WORKSPACE/aks-deployment.parameters.json --what-if
       
       # AKS deploy
     - name: deploy
