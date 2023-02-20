@@ -1,0 +1,21 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "sites": {
+        "value": [
+            {
+                "name": "codywicker",
+                "sku": {
+                    "name": "B1",
+                    "tier": "Basic"
+                },
+                "dockerimage": "DOCKER|wordpress:5.8.3-php7.4-apache",
+                "txtRecordValue": "81E1F422E8E8FC939B0738DB9ED457DEEAD37EA3C2A06E646F09BFBA9E041246",
+                "servicePrincipal": "b213c9ba-4b8f-4a83-b143-401d95634bc9",
+                "tenant": "69b64895-394e-46b2-bebe-ccf31844bd62"
+            }
+        ]
+      }
+    }
+}
