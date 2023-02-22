@@ -1,0 +1,13 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"servicePlan": {
+			"value": {
+                "name": "codywicker-appservice",
+			    "id": "/subscriptions/fe5edb26-ecef-4527-8702-93e2d5f98446/resourceGroups/codywicker-rg/providers/Microsoft.Web/serverfarms/codywicker-appservice",
+                "resourceGroup": "codywicker-rg"
+            }
+		}
+	}
+}
